@@ -1,0 +1,81 @@
+
+The following have been reloaded with a version change:
+  1) openmpi/openmpi-4.0.5 => openmpi/openmpi-4.1.4_ucx-1.12.1_gcc-9.4.0
+
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+orterun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[179,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+orterun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[101,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "train_resnet34_hvd.py", line 40, in <module>
+    tf.config.experimental.set_visible_devices(gpus[hvd.local_rank()], 'GPU')
+IndexError: list index out of range
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+orterun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[1758,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------
