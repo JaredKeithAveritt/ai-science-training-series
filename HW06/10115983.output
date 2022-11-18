@@ -1,0 +1,157 @@
+# I am rank 0 of 1
+threading set:  64 64
+Parameters set, preparing dataloading
+{
+    "data": {
+        "handler": "ilsvrc_dataset",
+        "batch_size": 256,
+        "train_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt",
+        "test_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_val_filelist.txt",
+        "shuffle_buffer": 200000,
+        "reshuffle_each_iteration": true,
+        "num_parallel_readers": 64,
+        "prefetch_buffer_size": 8,
+        "crop_image_size": [
+            256,
+            256
+        ],
+        "num_classes": 1000,
+        "num_channels": 3
+    }
+}
+num labels: 1000
+build dataset /lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt
+input filelist contains 1281167 files, estimated batches per rank 5004
+build dataset /lus/grand/projects/ALCFAITP/ilsvrc_val_filelist.txt
+input filelist contains 50000 files, estimated batches per rank 195
+Datasets ready, creating network.
+Initial Image size:  (256, 256, 256, 3)
+output shape: (256, 1000)
+Model: "res_net34"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ sequential (Sequential)     (256, 64, 64, 64)         9664      
+                                                                 
+ sequential_1 (Sequential)   (256, 64, 64, 64)         223104    
+                                                                 
+ residual_downsample (Residu  multiple                 230784    
+ alDownsample)                                                   
+                                                                 
+ sequential_2 (Sequential)   (256, 32, 32, 128)        888576    
+                                                                 
+ residual_downsample_1 (Resi  multiple                 920320    
+ dualDownsample)                                                 
+                                                                 
+ sequential_3 (Sequential)   (256, 16, 16, 256)        5911040   
+                                                                 
+ residual_downsample_2 (Resi  multiple                 3675648   
+ dualDownsample)                                                 
+                                                                 
+ sequential_4 (Sequential)   (256, 8, 8, 512)          9447424   
+                                                                 
+ average_pooling2d (AverageP  multiple                 0         
+ ooling2D)                                                       
+                                                                 
+ flatten (Flatten)           multiple                  0         
+                                                                 
+ dense (Dense)               multiple                  513000    
+                                                                 
+=================================================================
+Total params: 21,819,560
+Trainable params: 21,804,328
+Non-trainable params: 15,232
+_________________________________________________________________
+None
+start profiler
+Finished step 1 of 5004 in epoch 0,loss=106.514, acc=0.000 (8.393 img/s).
+Finished step 2 of 5004 in epoch 0,loss=73.475, acc=0.000 (386.038 img/s).
+Finished step 3 of 5004 in epoch 0,loss=51.252, acc=0.000 (684.107 img/s).
+Finished step 4 of 5004 in epoch 0,loss=36.713, acc=0.000 (438.284 img/s).
+Finished step 5 of 5004 in epoch 0,loss=26.416, acc=0.000 (438.173 img/s).
+Finished step 6 of 5004 in epoch 0,loss=22.599, acc=0.000 (609.123 img/s).
+Finished step 7 of 5004 in epoch 0,loss=17.836, acc=0.000 (361.914 img/s).
+Finished step 8 of 5004 in epoch 0,loss=15.532, acc=0.016 (436.941 img/s).
+Finished step 9 of 5004 in epoch 0,loss=12.873, acc=0.000 (387.768 img/s).
+Finished step 10 of 5004 in epoch 0,loss=11.411, acc=0.000 (677.584 img/s).
+stop profiler
+mean image/s =   491.10   standard deviation:   121.51
+# I am rank 0 of 2
+# I am rank 1 of 2
+threading set:  32 32
+Parameters set, preparing dataloading
+{
+    "data": {
+        "handler": "ilsvrc_dataset",
+        "batch_size": 256,
+        "train_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt",
+        "test_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_val_filelist.txt",
+        "shuffle_buffer": 200000,
+        "reshuffle_each_iteration": true,
+        "num_parallel_readers": 32,
+        "prefetch_buffer_size": 8,
+        "crop_image_size": [
+            256,
+            256
+        ],
+        "num_classes": 1000,
+        "num_channels": 3
+    }
+}
+num labels: 1000
+build dataset /lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt
+input filelist contains 1281167 files, estimated batches per rank 2502
+# I am rank 0 of 4
+# I am rank 1 of 4
+# I am rank 2 of 4
+# I am rank 3 of 4
+threading set:  16 16
+Parameters set, preparing dataloading
+{
+    "data": {
+        "handler": "ilsvrc_dataset",
+        "batch_size": 256,
+        "train_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt",
+        "test_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_val_filelist.txt",
+        "shuffle_buffer": 200000,
+        "reshuffle_each_iteration": true,
+        "num_parallel_readers": 16,
+        "prefetch_buffer_size": 8,
+        "crop_image_size": [
+            256,
+            256
+        ],
+        "num_classes": 1000,
+        "num_channels": 3
+    }
+}
+# I am rank 6 of 8
+# I am rank 5 of 8
+# I am rank 2 of 8
+# I am rank 0 of 8
+# I am rank 7 of 8
+# I am rank 1 of 8
+# I am rank 3 of 8
+# I am rank 4 of 8
+threading set:  8 8
+Parameters set, preparing dataloading
+{
+    "data": {
+        "handler": "ilsvrc_dataset",
+        "batch_size": 256,
+        "train_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt",
+        "test_filelist": "/lus/grand/projects/ALCFAITP/ilsvrc_val_filelist.txt",
+        "shuffle_buffer": 200000,
+        "reshuffle_each_iteration": true,
+        "num_parallel_readers": 8,
+        "prefetch_buffer_size": 8,
+        "crop_image_size": [
+            256,
+            256
+        ],
+        "num_classes": 1000,
+        "num_channels": 3
+    }
+}
+num labels: 1000
+build dataset /lus/grand/projects/ALCFAITP/ilsvrc_train_filelist.txt
