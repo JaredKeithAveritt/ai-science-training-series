@@ -198,9 +198,9 @@ for ep in range(args.epochs):
         
     tt1 = time.time()
     
-  #  if (hvd.rank()==0):
+    if (hvd.rank()==0):
        # print(f"Validation accuracy after epoch {i_epoch.numpy()}: {mean_accuracy:.4f}.")
-    print('E[%d], train Loss: %.6f, training Acc: %.3f, val loss: %.3f, val Acc: %.3f\t Time: %.3f seconds' % (ep, training_loss, training_acc, test_loss, test_acc, tt1 - tt0))
+        print('E[%d], train Loss: %.6f, training Acc: %.3f, val loss: %.3f, val Acc: %.3f\t Time: %.3f seconds' % (ep, training_loss, training_acc, test_loss, test_acc, tt1 - tt0))
     metrics['train_acc'].append(training_acc.numpy())
     metrics['train_loss'].append(training_loss.numpy())
     metrics['valid_acc'].append(test_acc.numpy())
